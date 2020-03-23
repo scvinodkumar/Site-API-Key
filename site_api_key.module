@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_uninstall().
+ */
+function site_api_key_uninstall(){
+    \Drupal::configFactory()->getEditable('siteapikey.configuration')->delete();
+}
